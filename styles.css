@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dbe2e7;
+    color: #282828;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+    padding: 24px;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.headline.main {
+    color: #858484;
+    font-size: 1.5em;
+    padding: 24px;
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.slider {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 28px 22px;
+    text-align: center;
+}
+
+.slider:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.slider-img-container {
+    border-radius: 50%;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+    width: 150px;
+}
+
+.slider-img-container::before {
+    background: #3CB371;
+    border-radius: 50%;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: -8px;
+    top: -6px;
+    width: 100%;
+}
+
+.slider-img-container::after {
+    background: #3CB371;
+    border-radius: 50%;
+    color: #fff;
+    content: "\f10e";
+    display: grid;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    height: 2.5rem;
+    left: 0;
+    place-items: center;
+    position: absolute;
+    top: 0;
+    transform: translateY(25%);
+    width: 2.5rem;
+}
+
+.slider-img {
+    border-radius: 50%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+}
+
+.slider-full-name {
+    font-size: 1.25em;
+    letter-spacing:  0.25rem;
+    margin-top: 16px;
+}
+
+.slider-job-title {
+    color: #3CB371;
+    margin-top: 12px;
+    text-transform: uppercase;
+}
+
+.slider-description {
+    color: #858484;
+    line-height: 1.5em;
+    margin-top: 12px;
+}
+
+.button-container {
+    margin-top: 16px;
+}
+
+.prev-btn,
+.next-btn {
+    background: transparent;
+    border-color: transparent;
+    color: #3CB371;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin: 0 10px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    color: #2F4F4F;
+}
+
+.random-btn {
+    background: #ececec;
+    border-color: #3CB371;
+    border: 2px solid #3CB371;
+    border-radius: 8px;
+    color: #3CB371;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 16px;
+    padding: 8px 12px;
+}
+
+.random-btn:hover {
+    background: #3CB371;
+    color: #282828;
+}
